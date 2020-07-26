@@ -15,7 +15,8 @@ def check_run():
     if check_process():
         if not pathlib.Path(".vlcwasopened").exists (): #Needs to change path here!
 #Optional, it turns off your monitor screen        	os.system("xrandr --output DP-3 --off") #Needs to change monitor turn-on or off outputs! Optional Feature
-        	os.system("pkill xscreensaver")
+        	os.system("screen -S xscrn -X quit")
+		os.system("pkill xscreensaver")
 		os.system("pkill redshift-gtk")
 		os.system("touch .vlcwasopened")
     else:
