@@ -12,14 +12,14 @@ It should works all UNIX-like system
 
 Packages needed:
 
-pip install psutil
-pip install pathlib
-pip install time
-pip install os
-pip install schedule
+- pip install psutil
+- pip install pathlib
+- pip install time
+- pip install os
+- pip install schedule
 
-apt-get install screen
-yum install screen
+- apt-get install screen
+- yum install screen
 
 crontab -e as your user, or add to startup
 
