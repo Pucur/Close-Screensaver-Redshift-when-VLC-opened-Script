@@ -24,6 +24,7 @@ def check_run():
 #Optional, it turns back the monitor screen     os.system("xrandr --output DP-3 --mode 1920x1080 --rate 75 --same-as LVDS-1 --mode 1920x1080 --output HDMI-2 --mode 1920x1080 --same-as DP-3") #Needs to change monitor turn-on or off outputs! Optional feature
 		os.system("rm .vlcwasopened")
 		os.system("screen -S xscrn -X quit")
+		os.system("screen -S xscrn -d -m sh startredlight.sh") #Needs to change path here!
 		os.system("screen -S xscrn -d -m sh startscreensaver.sh") #Needs to change path here!
  
 schedule.every(.10).minutes.do(check_run)
