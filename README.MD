@@ -19,7 +19,8 @@ Packages needed:
 - pip install schedule
 
 - apt-get install screen
-- yum install screen
+- apt-get install redshift-gtk (for redshift)
+- apt-get install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra (for screensaver)
 
 crontab -e as your user, or add to startup
 
